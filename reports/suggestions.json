@@ -1,0 +1,20 @@
+{
+    "SSH Config": [
+        "No action needed."
+    ],
+    "Firewall": [
+        "Run `ufw enable` to activate firewall."
+    ],
+    "World-Writable Files": [
+        "Manually audit listed files and remove write permissionswith `chmod o-w <file>`."
+    ],
+    "UID 0 Users": [
+        "No action needed."
+    ],
+    "Sudoers File": [
+        "No action needed."
+    ],
+    "Running Services": [
+        "Review services listed in the report. Disable unnecessary ones using `systemctl disable <service>`"
+    ]
+}

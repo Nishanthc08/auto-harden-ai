@@ -1,0 +1,21 @@
+{
+    "ssh_config_issues": [
+        "Password authentication is enabled. Use SSH keys instead."
+    ],
+    "firewall_status": "UFW is not active. Enable firewall.",
+    "world_writable_files": "World-writable files found:\n50     16 -rwxrwxrwx   1 root     root        16000 May  2 09:32 /dev/shm/ad_qipcq_916_916_21_0\n       49      4 -rwxrwxrwx   1 root     root           20 May  2 09:32 /dev/shm/ad_qipcctrl_916_916_21\n       48      4 -rwxrwxrwx   1 root     root           40 May  2 09:32 /dev/shm/ad_qipcmtx_916_916_21\n       47      4 -rwxrwxrwx   1 boss     boss           40 May  2 09:32 /dev/shm/ad_mailbox_2820_0_1_evt_event_mtx\n       46      4 -rwxrwxrwx   1 boss     boss           40 May  2 09:32 /dev/shm/ad_mailbox_2820_0_1_mtx\n       45     36 -rwxrwxrwx   1 boss     boss      1048588 May  2 09:32 /dev/shm/ad_mailbox_2820_0_1_shm\n       44      4 -rwxrwxrwx   1 boss     boss           40 May  2 09:32 /dev/shm/ad_mailbox_2820_0_0_evt_event_mtx\n       43      4 -rwxrwxrwx   1 boss     boss           40 May  2 09:32 /dev/shm/ad_mailbox_2820_0_0_mtx\n       42      4 -rwxrwxrwx   1 boss     boss      1048588 May  2 09:32 /dev/shm/ad_mailbox_2820_0_0_shm\n       41     16 -rwxrwxrwx   1 boss     boss        16000 May  2 09:32 /dev/shm/ad_qipcq_2820_2847_0_0",
+    "uid_0_users": "Only root has UID 0.",
+    "sudoers_check": "Defaults\tenv_reset\nDefaults\tmail_badpass\nDefaults\tsecure_path=\"/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\"\n\nDefaults\tuse_pty\n\n\n\n\n\n\n\n\n\n\n\nroot\tALL=(ALL:ALL) ALL\n\n%sudo\tALL=(ALL:ALL) ALL\n\n\n@includedir /etc/sudoers.d",
+    "running_services": [
+        "UNIT                          LOAD   ACTIVE SUB     DESCRIPTION",
+        "  accounts-daemon.service       loaded active running Accounts Service",
+        "  anydesk.service               loaded active running AnyDesk",
+        "  apache-htcacheclean.service   loaded active running Disk Cache Cleaning Daemon for Apache HTTP Server",
+        "  apache2.service               loaded active running The Apache HTTP Server",
+        "  avahi-daemon.service          loaded active running Avahi mDNS/DNS-SD Stack",
+        "  bettercap.service             loaded active running bettercap api.rest service.",
+        "  bluetooth.service             loaded active running Bluetooth service",
+        "  colord.service                loaded active running Manage, Install and Generate Color Profiles",
+        "  containerd.service            loaded active running containerd container runtime"
+    ]
+}
