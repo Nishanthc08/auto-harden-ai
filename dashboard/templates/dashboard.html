@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>AutoHardenAI - Web Dashboard</title>
+	<style>
+		body {font-family: Arial, sans-serif; background: #f4f4f4; padding: 20px; }
+		h1 { color: #2c3e50; }
+		.section { background: white; padding: 20px; margin-bottom: 20px; border-radius: 8px; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
+		.section h2 { color: #34495e; }
+		.key { font-weight: bold; color: #2980b9; }
+		ul { padding-left: 20px; }
+	</style>
+</head>
+<body>
+	<h1>AutoHardenAI Web Dashboard</h1>
+	<div class="section">
+		<h2>System Scan Report</h2>
+		{% for key, value in report.items() %}
+			<p class="key">{{ key.replace('_', ' ').title() }}</p>
+			{% if value is string %}
+				<p>{{ value }}</p>
+			{% elif value is iterable %}
+				<ul>
+					{% for item in value %}
+						<li>{{ item }}</li>
+					{% endfor %}
+				</ul>
+			{% else %}
+				<p>{{ value }}</p>
+			{% endif %}
+		{% endfor %}
+	</div>
+
+	<div class="section">
+		<h2>AI Suggestions</h2>
+		{% for key, value in suggestions.items() %}
+			<p class="key">{{ key }}</p>
+			<ul>
+				{% for item in value %}
+					<li>{{ item }}</li>
+				{% endfor %}
+			</ul>
+		{% endfor %}
+	</div>
+</body>
+</html>
