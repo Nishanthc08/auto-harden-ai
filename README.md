@@ -25,7 +25,23 @@
 
 ## 📁 Directory Structure
 
-<pre> ```text autohardenai/ ├── audit/ ├── system_scan.py # Core system scanner ├── ai_suggester.py # AI suggestion engine ├── dashboard/ │ ├── terminal_view.py # CLI dashboard using rich │ ├── web_dashboard.py # Web dashboard using Flask │ └── templates/ │ └── dashboard.html # HTML page for Flask UI ├── reports/ │ ├── latest_report.json # Output from scanner │ └── suggestions.json # AI-based suggestions ``` </pre>
+```
+autohardenai/
+├── audit/
+│   ├── system_scan.py         # Core system scanner
+│   └── ai_suggester.py        # AI suggestion engine
+│
+├── dashboard/
+│   ├── terminal_view.py       # CLI dashboard using Rich
+│   ├── web_dashboard.py       # Web dashboard using Flask
+│   └── templates/
+│       └── dashboard.html     # HTML page for Flask UI
+│
+├── reports/
+│   ├── latest_report.json     # Output from scanner
+│   └── suggestions.json       # AI-based suggestions
+```
+
 
 
 ---
