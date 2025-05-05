@@ -61,12 +61,3 @@ python3 dashboard/terminal_view.py
 Web Dashboard -
 python3 dashboard/web_dashboard.py
 
-### Sample Output - Terminal View
-╭──────────────────── SSH Config Issues ─────────────────────╮
-│ - PermitRootLogin is enabled                               │
-╰────────────────────────────────────────────────────────────╯
-
-╭────────────────────── AI Suggestions ──────────────────────╮
-│ SSH Config: Set PermitRootLogin no in /etc/ssh/sshd_config │
-╰────────────────────────────────────────────────────────────╯
-
