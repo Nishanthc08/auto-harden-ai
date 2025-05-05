@@ -39,25 +39,43 @@ git clone https://github.com/yourname/autohardenai.git
 cd autohardenai
 ```
 ### 2. Create a Virtual Environment (Optional but recommended)
+
+```bash
 python3 -m venv venv
 source venv/bin/activate
+```
 
 ### 3. Install dependecies
+
+```bash
 pip install flask rich
+```
 
 ### 4. Run the Audit System
 
 Step 1 - Run the System Scanner
+
+```bash
 python3 audit/system_scan.py
+```
 
 Step 2 - Generate AI Suggestions
+
+```bash
 python3 audit/ai_suggester.py
+```
 
 ### 5. View the Results
 
 Terminal Dashboard -
+
+```bash
 python3 dashboard/terminal_view.py
+```
 
 Web Dashboard -
+
+```bash
 python3 dashboard/web_dashboard.py
+```
 
